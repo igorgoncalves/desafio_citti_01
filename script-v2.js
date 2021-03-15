@@ -2,14 +2,14 @@
 
 let listFoods = new Array();
 
-function createFood(code, names, namesEnglish, scientificName, group) {
-  
-  let food = new Object();
-  food.code = code;
-  food.names = names;
-  food.namesEnglish = namesEnglish;
-  food.scientificName = scientificName;
-  food.group = group;
+function createFood(code, names, namesEnglish, scientificName, group) {  
+  const food = {
+    code,
+    names: names.split(","),
+    namesEnglish: namesEnglish.split(","),
+    group,
+    scientificName,
+  }
   return food;
 }
 

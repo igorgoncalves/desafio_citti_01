@@ -15,9 +15,51 @@
 </head>
 
 <body>
-    <h1>Faça seu formulário aqui</h1>
-    <input type="text">
-    <script src="script.js" async defer></script>
+    <h1>Preencha as informações abaixo <br>para gerar sua lista de alimentos</h1>
+    <div class="form">
+        <div class="listFoods.Code">
+            <label for="code">Código</label>
+            <br>
+            <input type="text" class="listFoodsCode" name="code" id="code" placeholder="Código do alimento">
+        </div>
+        <br>
+        <div class="listFoods.Names">
+            <label for="names">Nomes</label>
+            <br>
+            <input type="text" class="listFoodsName" name="name" id="names" placeholder="Nome do alimento">
+        </div>
+        <br>
+        <div class="listFoods.namesEnglish">
+            <label for="namesEnglish">Nomes em Inglês</label>
+            <br>
+            <input type="text" class="listFoodsEnglish" name="nameEnglish" id="namesEnglish"
+                placeholder="Digite o nome da alimento em Inglês">
+        </div>
+        <div class="listFoods.Scientific">
+            <br>
+            <label for="scientificName">Nome Científico</label>
+            <br>
+            <input type="text" class="listFoodsScientific" name="scientificName" id="scientificName"
+                placeholder="Nome Científio do alimento">
+        </div>
+        <br>
+        <div class="listFoods.group">
+            <label for="group">Grupo</label>
+            <br>
+            <input type="text" class="listFoodsgroup" name="group" id="group"
+                placeholder=" Grupo ao qual o alimento pertence">
+        </div>
+        <br>
+        <br>
+        <div class="buttons">
+          <button onclick="add()" >Salvar</button>
+          <button onclick="list()" >Exibir</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
